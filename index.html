@@ -3,70 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- we will learn morea bout the viewport later in the semester -->
-    <title>CSS Demo Page</title>
-
-  <style>
-  /* Step 1: Body font family */
-body {
-    font-family: Georgia, serif;
-    margin: 40px;
-    max-width: 800px;
-}
-
-/* Step 2: Style all paragraphs */
-p {
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Step 3: Style headings with different font */
-h1, h2 {
-    font-family: Arial, sans-serif;
-    color: #2c3e50;
-}
-
-/* Step 4: Differentiate heading sizes */
-h1 {
-    font-size: 36px;
-}
-
-h2 {
-    font-size: 24px;
-    margin-top: 30px;
-}
-
-/* Step 6: Style the list */
-ul {
-    line-height: 1.8;
-}
-  
-  </style>
-  
-  
-  
-  </head>
+    <!-- We will learn more about the viewport later in the semester -->
+    <title>Classes and IDs Demo</title>
+    <style>
+        /* Basic body styling from first demo */
+        body {
+            font-family: Georgia, serif;
+            margin: 40px;
+            max-width: 800px;
+        }
+        
+        /* Basic element styles */
+        p {
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        h1, h2 {
+            font-family: Arial, sans-serif;
+            color: #2c3e50;
+        }
+        
+        h1 {
+            font-size: 36px;
+        }
+        
+        h2 {
+            font-size: 24px;
+            margin-top: 30px;
+        }
+        
+        /* ID for the main page title */
+        #main-title {
+            text-align: center;
+            color: navy;
+            font-size: 48px;
+            border-bottom: 3px solid navy;
+            padding-bottom: 10px;
+        }
+        
+        /* Class for key takeaways */
+        .key-point {
+            background-color: #fff9e6;
+            padding: 15px;
+            border-left: 5px solid #ffc107;
+            margin: 20px 0;
+        }
+        
+        /* Class for examples */
+        .example {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-left: 5px solid #4caf50;
+            margin: 20px 0;
+        }
+        
+        /* Class for warnings or important notes */
+        .note {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-left: 5px solid #2196f3;
+            margin: 20px 0;
+        }
+    </style>
+</head>
 <body>
-    <h1>Learning CSS</h1>
+    <h1 id="main-title">Web Design Best Practices</h1>
     
-    <p>This page demonstrates how CSS works. Right now it looks plain because we haven't added any styles yet.</p>
+    <h2>Planning Your Website</h2>
+    <p>Before you start building, take time to plan your content structure and visual design.</p>
+    <p class="key-point">Always sketch your layout on paper first. This saves time and helps you think through the user experience.</p>
     
-    <h2>What is CSS?</h2>
-    <p>CSS stands for Cascading Style Sheets. It controls how HTML elements look on the page.</p>
-    <p>Without CSS, every webpage would look like this: plain black text on a white background.</p>
+    <h2>Writing Good Content</h2>
+    <p>Content should be clear, concise, and easy to read. Break up long paragraphs and use headings to organize information.</p>
+    <p class="example">Keep paragraphs under five sentences when possible. This makes text easier to scan on screens.</p>
+    <p>Remember that users often skim rather than read every word.</p>
     
-    <h2>Why Use CSS?</h2>
-    <p>CSS separates content from presentation. This means you can change the appearance of your entire website by editing just one file.</p>
+    <h2>Choosing Colors</h2>
+    <p>Color choices affect both aesthetics and accessibility. High contrast helps users read your content.</p>
+    <p class="note">Test your color combinations to ensure they meet accessibility standards for color contrast.</p>
     
-    <h2>Basic CSS Concepts</h2>
-    <ul>
-        <li>Selectors choose which elements to style</li>
-        <li>Properties define what aspect to change</li>
-        <li>Values specify how to change it</li>
-    </ul>
+    <h2>Typography Matters</h2>
+    <p>Font selection impacts readability. Choose fonts that are clear at various sizes.</p>
+    <p class="example">Sans-serif fonts like Arial work well for headings. Serif fonts like Georgia are good for body text.</p>
+    <p class="key-point">Limit yourself to two or three fonts maximum. Too many fonts make your site look unprofessional.</p>
     
-    <h2>Getting Started</h2>
-    <p>We will add CSS rules one at a time. Watch how each rule changes the appearance of this page.</p>
-    <p>By the end, this page will look much more polished and readable.</p>
+    <h2>Testing Your Site</h2>
+    <p>Always test your website in multiple browsers and on different devices before launching.</p>
+    <p class="note">Mobile users now make up more than half of web traffic. Your site must work well on phones and tablets.</p>
 </body>
 </html>
